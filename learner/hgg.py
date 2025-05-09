@@ -115,6 +115,7 @@ class HGGLearner:
 		self.reactive_tamp = None
 
 	def learn(self, args, env, env_test, agent, buffer, planner):
+		
 		self.achieved_trajectory_pool.clear()
 
 		self.initial_goals = []
@@ -126,24 +127,12 @@ class HGGLearner:
 		self.env = env
 		self.env_test = env_test
 
-
-
 		if self.sampler is None:
 			self.sampler = MatchSampler(args, self.achieved_trajectory_pool, self.env)
 		self.sampler.reset()
 
 		initial_goals = []
 		desired_goals = []
-
-		# args.episodes = 1
-		# for i in range(args.episodes):
-		# 	obs = self.env_List[i].reset()
-		# 	goal_a = obs['achieved_goal'].copy()
-		# 	goal_d = obs['desired_goal'].copy()
-		# 	initial_goals.append(goal_a.copy())
-		# 	desired_goals.append(goal_d.copy())
-		# self.initial_goals = initial_goals
-		# self.desired_goals = desired_goals
 
 		obs = self.env.reset()
 		goal_a = obs['achieved_goal'].copy()
@@ -154,18 +143,14 @@ class HGGLearner:
 		self.initial_goals = initial_goals
 		self.desired_goals = desired_goals
 
-
-
 		achieved_trajectories = []
 		achieved_init_states = []
 		achieved_rewards = []
-
 
 		init_state = obs['observation'].copy()
 		self.episode_return = 0
 
 		for i in range(args.episodes):
-
 
 			sampled_goal = self.sampler.sample()
 			action_hgg = agent.step(obs, explore=True, goal_based=True)
