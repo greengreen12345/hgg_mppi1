@@ -1,0 +1,32 @@
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - tag: 
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - alg: ddpg
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - learn: hgg
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - env: FetchPush-v1
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - goal: interval
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - init_offset: 1.0
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - gamma: 0.98
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - clip_return: True
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - eps_act: 0.3
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - std_act: 0.2
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - pi_lr: 0.001
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - q_lr: 0.001
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - act_l2: 1.0
+[2025-04-16 13:50:52,140][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - polyak: 0.95
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - epochs: 20
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - cycles: 20
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - episodes: 50
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - timesteps: 50
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - train_batches: 20
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - buffer_size: 10000
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - buffer_type: energy
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - batch_size: 256
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - warmup: 10000
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - her: future
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - her_ratio: 0.8
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - pool_rule: full
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - hgg_c: 3.0
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - hgg_L: 5.0
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - hgg_pool_size: 1000
+[2025-04-16 13:50:52,141][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - save_acc: True
+[2025-04-16 13:50:53,828][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - *** network initialization complete ***
+[2025-04-16 13:50:53,828][log/text/ddpg-FetchPush-v1-hgg-(2025-04-16-13:50:52).log][INFO] - *** tester initialization complete ***
