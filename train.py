@@ -13,20 +13,6 @@ import numpy as np
 
 import torch, hydra, zerorpc
 
-def convert_ndarray(obj):
-    if isinstance(obj, np.ndarray):
-        return obj.tolist()
-    elif isinstance(obj, list):
-        return [convert_ndarray(item) for item in obj]
-    elif isinstance(obj, dict):
-        return {k: convert_ndarray(v) for k, v in obj.items()}
-    elif isinstance(obj, torch.Tensor):
-        return obj.tolist()
-    elif isinstance(obj, list) and all(isinstance(i, torch.Tensor) for i in x):
-        return [i.tolist() for i in obj]
-
-    return obj
-
 def main():
     args = get_args()
     env, env_test, agent, buffer, learner, tester = experiment_setup(args)
